@@ -1,0 +1,84 @@
+Runtime
+
+1. When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches infinity. You can think of the workload as the number of tasks required to complete a job. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+
+The workload can change based on the total number of crackers in the box. 
+
+
+
+2. Order the following runtimes in descending order of efficiency (that is, fastest runtimes first, slowest last) as n approaches infinity:
+*O(log n)
+*O(n2)
+*O(n log n)
+*O(n)
+*O(2n)
+*O(1)
+(Hint: to write exponents in a text file, use a carrot, like so: n^2 or 2^n.)
+
+0(1), 0(log n), 0(n), O(n log n) , O(n^2), O(2^n)
+
+
+################################
+Stacks and Queues
+
+1.In the following cases, would a stack or queue be a more appropriate data structure?
+	The process of loading and unloading pallets onto a flatbed truck
+		-A stack would be appropriate
+	Putting bottle caps on bottles of beer as they roll down an assembly line
+		-A Queue would be appropriate
+	Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2)
+		-A Queue would be appropriate
+			If you put the expression into the Order of Operations for mathematical equations, you run the Order of Operations through like a Queue to get to the solution.
+
+2.Describe two more situations where a queue would be an appropriate data structure.
+
+If you had bug reports coming in from your program you would start by solving the first bug to come in and then work through the report till there are now more bugs in your report.
+For a shopping cart application you would add the price of the first item added to the cart to the subtotal calculation, then add all the items that are added after that to the subtotal, until no more items are added.
+
+
+3.Describe two more situations where a stack would be an appropriate data structure.
+
+If you are looking at reviews for your product and trying to display them in order of helpfulness for the customer I would start by placing the most recient reviews at the top for customers to see and place the older reviews blow that.
+If you wanted to show the user a search history for your app. You would display the last thing that they looked for then display the rest of the history in decending order.
+
+
+###################################
+Linked Lists
+
+
+1. Given the linked list below, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+
+The nodes are the Apple, Berry, and Cherry boxes.
+The data in the Apple node is the string "Apple", The data in the Berry node is the string "Berry", and The data in the Cherry node is the string "Cherry".
+The head head is the Apple node.
+The tail is the Cherry node.
+
+
+2.What’s the difference between doubly- and singly-linked lists?
+
+The difference between a doubly-linked list and a singly-linked list is that a node singly-linked list only knows the node that is next in the line. A dobuly-linked list node knows the node that was previous to it and the node that is next in the list.
+
+
+
+3.Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+
+It is easier to append to the end of a linked list if you know the tail because then you do not have to traverse through the whole linked list to find the end and then append the new node. Instead you can just locate the tail of the list and append the new node.
+
+##################################
+Trees
+
+
+1. Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burritos (starting at food)? (Assume nodes are enqueued in left-to-right order.) Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+
+It would start at Food, not burritos. Then go down a level to Italian, Indian, and Mexican, not burritos. Then go down another level to Lasagna, Pizza, Tikka Masala, Saag, Burritos, Tacos, Enchaladas. After looking at Enchaladas and Tacos we find Burritos!
+
+
+2.Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? (Assume nodes are pushed in left-to-right order.) Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+
+It would start at Food, not Chicago-Style. Then look at Italian, Indian, and Mexican, mexican is not Chicago-Style. Then look at all three of mexican's children and see that none of them are Chicago-Style. Then look at Indian, it's not Chicago-Style. THen look at Indian's two children, none of which are Chicago-Style. Then look at Italian it's not Chicago-Style. Look at it's two children, Pizza is not chicago-style but it does have children. Look at Pizza's children and the third one is Chicago-Style!
+
+
+3.How is a binary search tree different from other trees?
+
+A binary search tree is different from other trees becuse if a node has children it will only have two. Giving you two choices and often has a rule for how the nodes are arranged making searching much faster.
+
